@@ -1,0 +1,16 @@
+{
+    "openai": {
+        "completion-model": {
+            "name": "gpt-3.5-turbo",
+            "rpm": 3500,
+            "tpm": 90000,
+            "pricing": 0.003
+        },
+        "embedding-model": {
+            "name": "text-embedding-ada-002",
+            "rpm": 3000,
+            "tpm": 1000000,
+            "pricing": 0.0001
+        }
+    }
+}
