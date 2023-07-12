@@ -34,5 +34,5 @@ Change OPENAI_APIKEY on `.env_example` to yours and rename that file to `.env`
 uvicorn api:app --host localhost --port 8000 --reload
 ```
 
-## How use (locally)
+## How to use (locally)
 Go to FastAPI swagger on [localhost](http://localhost:8000/docs)
