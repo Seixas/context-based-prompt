@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, String, Float, Boolean
+from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime
+import datetime
 from .database import Base
 
 class Prompts(Base):
@@ -10,3 +11,4 @@ class Prompts(Base):
     prompt = Column(String)
     ntokens = Column(Integer)
     cost = Column(Float)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
