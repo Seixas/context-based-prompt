@@ -1,11 +1,14 @@
-from fastapi import Depends, Request, APIRouter, File, UploadFile, HTTPException
-from pydantic import BaseModel
-from typing import List, Optional
+from fastapi import Depends, Request, APIRouter, HTTPException
 from starlette.responses import JSONResponse
-from tempfile import NamedTemporaryFile
 
-from ..schemas import req, res
+from ..schemas import req
 from ..settings import manager
+
+from ..infra import models
+from sqlalchemy.orm import Session
+
+from ..settings import get_db
+
 
 router = APIRouter(
     prefix="/generate",
@@ -15,8 +18,20 @@ router = APIRouter(
     )
 
 
-#@app.post("/generate", response_class=JSONResponse) #use this on app root file
 @router.post("/", response_class=JSONResponse)
-async def generate(prompt: req.Prompt) -> JSONResponse:
+async def generate(prompt: req.Prompt, db: Session = Depends(get_db)) -> JSONResponse:
     print(prompt)
-    return manager.create_answer_with_context(prompt.text, prompt.with_context)
+
+    result = manager.create_answer_with_context(prompt.text, prompt.with_context)
+
+    prompt_model = models.Prompts()
+    prompt_model.author = 'root'
+    prompt_model.withcontext = result['with_context']
+    prompt_model.prompt = result['user_input']
+    prompt_model.ntokens = result['costs']['prompt_num_tokens']
+    prompt_model.cost = result['costs']['total_cost']
+
+    db.add(prompt_model)
+    db.commit()
+
+    return result

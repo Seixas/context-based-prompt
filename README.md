@@ -27,6 +27,22 @@ conda env create -f environment.yml
 ```sh
 conda activate llm-base
 ```  
+or
+```sh
+conda create -n llm-base python=3.9 
+```  
+```sh
+pip install -r requirements.txt
+```  
+
+To create your own requirements:  
+```sh
+pip3 list --format=freeze > requirements.txt
+```  
+```sh
+conda env export > environment.yml --no-builds
+```  
+  
 Change OPENAI_APIKEY on `.env_example` to yours and rename that file to `.env`  
 
 ## How to run (locally)

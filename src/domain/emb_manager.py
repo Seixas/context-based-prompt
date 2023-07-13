@@ -1,7 +1,8 @@
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import Distance, VectorParams, PointStruct
 from qdrant_client.http import models
-from utils import CustomFormatter
+import tiktoken
+from typing import List, Union
 import openai
 import time
 import os
@@ -59,18 +60,9 @@ class EmbeddingsManager:
     def generate_embeddings(self, chunks: list[str], retry: int=20) -> list:
         #model RPM	TPM
         #text-embedding-ada-002	3000  1 000 000
-        #openai.api_key = _dotenv['OPENAI_APIKEY']
-        #self.openai.api_key = _dotenv['OPENAI_APIKEY']
         points = []
         for i, chunk in enumerate(chunks, 1):
-            #print(f"Embeddings {i} chunk: {chunk}")
             print(f"Embeddings {i}")
-            #response = self.openai.Embedding.create(
-            #    input=chunk,
-            #    model=self.EMBEDDING_MODEL
-            #)
-            #embeddings = response['data'][0]['embedding']
-
             for i in range(retry):
                 retry_formula = (0.5*(2**i * 100))*0.001
                 print(f"Retry {i} {retry_formula} milliseconds")
@@ -88,7 +80,6 @@ class EmbeddingsManager:
 
             # new class for "dataframe" based on pointsctruct?
             points.append(PointStruct(id=i, vector=embeddings, payload={"text": chunk}))
-            #print("---")
             self.points = points
         return points
 
@@ -140,14 +131,35 @@ class EmbeddingsManager:
                 {"role": "user", "content": prompt}
             ]
             )
+        generated = completion.choices[0].message.content
+        costs = self.check_price(user_input, prompt, generated)
 
-
-        #return completion.choices[0].message.content
         return {
             "user_input": user_input,
+            "with_context": with_context,
             "prompt": prompt,
-            "generated": completion.choices[0].message.content,
-            **context_json
-            #"context": search_results,
-            #"prompt_embedding": embeddings
+            "generated": generated,
+            **context_json,
+            "costs": costs
+        }
+
+    def num_tokens_from_string(self, string: str, encoding_name: str="cl100k_base") -> int:
+        """Returns the number of tokens in a text string."""
+        encoding = tiktoken.get_encoding(encoding_name)
+        return len(encoding.encode(string))
+
+    def check_price(self, user_input:str, prompt: str, generated: str) -> dict:
+        prompt_num_tokens = self.num_tokens_from_string(prompt)
+        input_num_tokens = self.num_tokens_from_string(user_input)
+        generated_num_tokens = self.num_tokens_from_string(generated)
+        embedding_cost = input_num_tokens*.0001/1000
+        #$0.0015 / 1K tokens	$0.002 / 1K tokens
+        gpt_cost = (prompt_num_tokens*.00015/1000) + (generated_num_tokens*.002/1000)
+        total_cost = gpt_cost+embedding_cost
+        return {
+            "input_num_tokens": input_num_tokens,
+            "prompt_num_tokens": prompt_num_tokens,
+            "embedding_cost": embedding_cost,
+            "gpt_cost": gpt_cost,
+            "total_cost": total_cost
         }

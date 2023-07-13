@@ -1,4 +1,5 @@
 from .domain.emb_manager import EmbeddingsManager
+from .infra.database import SessionLocal
 
 
 manager_params = {
@@ -8,3 +9,10 @@ manager_params = {
     }
 manager = EmbeddingsManager(**manager_params)
 manager.instantiate_vector_db()
+
+def get_db():
+    try:
+        db = SessionLocal()
+        yield db
+    finally:
+        db.close()

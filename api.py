@@ -8,11 +8,14 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.schemas import req
-from src.routes import emb_create, generate
+from src.routes import emb_create, generate, query
 from src.settings import manager
 
 from fastapi_cache import FastAPICache
 from fastapi_cache.decorator import cache
+
+from src.infra import models
+from src.infra.database import engine
 
 import logging
 from utils import CustomFormatter
@@ -76,6 +79,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+models.Base.metadata.create_all(bind=engine)
 
 @cache()
 async def get_cache():
@@ -108,3 +112,4 @@ async def healthcheck() -> str:
 
 app.include_router(generate.router)
 app.include_router(emb_create.router)
+app.include_router(query.router)
