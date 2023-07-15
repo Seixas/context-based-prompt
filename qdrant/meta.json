@@ -3,7 +3,7 @@
         "mycollection": {
             "vectors": {
                 "size": 1536,
-                "distance": "Cosine",
+                "distance": "Euclid",
                 "hnsw_config": null,
                 "quantization_config": null,
                 "on_disk": null
@@ -21,7 +21,7 @@
         "2023collection": {
             "vectors": {
                 "size": 1536,
-                "distance": "Cosine",
+                "distance": "Euclid",
                 "hnsw_config": null,
                 "quantization_config": null,
                 "on_disk": null

@@ -12,6 +12,11 @@ It makes it useful for all sorts of neural network or semantic-based matching, f
 Qdrant [GitHub](https://github.com/qdrant/qdrant) and [Docs](https://qdrant.tech/documentation/quick-start/).  
 OpenAI [Docs](https://platform.openai.com/docs/api-reference).  
 
+## The purpose and the process  
+This project was done without abstracting too much all those integrations with OpenAI, qdrant and other things.  
+Keeping things consise and simple to get the idea of whats happening and an idea of which points we can customize with our taste.  
+To do maximum abstractions between integrations of OpenAI, vector dbs, huggingface models, and chain them together, you can use [LangChain](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/qdrant) for this.  
+  
 The process:
 1. Create a vector DB
 2. extract text from documents (e.g. .pdf, .txt, .docx) and create embeddings
@@ -19,6 +24,9 @@ The process:
 4. use vector DB to search for the most similar embeddings based on a user input
 5. Enhance a prompt concatenating the results of most similar embeddings as context to a user input
 6. Generate a response based on the enhanded prompt
+
+## Things to note
+Before setting up any vector DB collection, we need to check which `embedding model` we gonna use because of the strict dimension that they are created e.g `ada002` has 1536 dims, our collection needs to match this dimensions number.  
 
 ## How to setup
 ```sh

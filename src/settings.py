@@ -4,8 +4,8 @@ from .infra.database import SessionLocal
 
 manager_params = {
         "path": "./qdrant",
-        "collection_name": "mycollection", # test collection aviation
-        #"collection_name": "2023collection", # test collection with unseen data
+        #"collection_name": "mycollection", # test collection aviation
+        "collection_name": "2023collection", # test collection with unseen data
         "mode": "hdd"
     }
 manager = EmbeddingsManager(**manager_params)
