@@ -6,6 +6,7 @@ from typing import List, Union
 import openai
 import time
 import os
+import uuid
 from dotenv import load_dotenv, dotenv_values
 
 # Env startup
@@ -44,6 +45,7 @@ class EmbeddingsManager:
                 raise e
             print(f'{e}\n Creating {self.collection_name} collection...')
             self.__create_collection(qdrant_client)
+            collection_info = qdrant_client.get_collection(collection_name=self.collection_name)
         print(collection_info)
 
         self.qdrant_client = qdrant_client
@@ -61,8 +63,8 @@ class EmbeddingsManager:
         #model RPM	TPM
         #text-embedding-ada-002	3000  1 000 000
         points = []
-        for i, chunk in enumerate(chunks, 1):
-            print(f"Embeddings {i}")
+        for _id, chunk in enumerate(chunks, 1):
+            print(f"Embeddings id: {_id}, chunk len: {len(chunk)}")
             for i in range(retry):
                 retry_formula = (0.5*(2**i * 100))*0.001
                 print(f"Retry {i} {retry_formula} milliseconds")
@@ -79,8 +81,8 @@ class EmbeddingsManager:
                         raise e
 
             # new class for "dataframe" based on pointsctruct?
-            points.append(PointStruct(id=i, vector=embeddings, payload={"text": chunk}))
-            self.points = points
+            points.append(PointStruct(id=_id, vector=embeddings, payload={"text": chunk}))
+        self.points = points
         return points
 
 
@@ -98,6 +100,7 @@ class EmbeddingsManager:
     def create_answer_with_context(self, user_input: str, with_context: bool=True) -> str:
         prompt = user_input
         context_json = {}
+        scores = []
         if with_context:
             response = self.openai.Embedding.create(
                 input=user_input,
@@ -114,6 +117,7 @@ class EmbeddingsManager:
             prompt = "Contexto:\n"
             for result in search_results:
                 prompt += result.payload['text'] + "\n---\n"
+                scores.append(result.score)
             prompt += f"Pergunta: {user_input}\n---\nResposta:"
 
             #print("----PROMPT START----")
@@ -133,6 +137,7 @@ class EmbeddingsManager:
             )
         generated = completion.choices[0].message.content
         costs = self.check_price(user_input, prompt, generated)
+        emb_distance = sum(scores)/len(scores) if scores else None
 
         return {
             "user_input": user_input,
@@ -140,6 +145,7 @@ class EmbeddingsManager:
             "prompt": prompt,
             "generated": generated,
             **context_json,
+            "emb_distance": emb_distance,
             "costs": costs
         }
 

@@ -30,6 +30,7 @@ async def generate(prompt: req.Prompt, db: Session = Depends(get_db)) -> JSONRes
     prompt_model.prompt = result['user_input']
     prompt_model.ntokens = result['costs']['prompt_num_tokens']
     prompt_model.cost = result['costs']['total_cost']
+    prompt_model.emb_distance = result['emb_distance']
 
     db.add(prompt_model)
     db.commit()

@@ -7,6 +7,7 @@ import os
 
 from ..schemas import req, res
 from ..domain.doc_reader import DocReader
+from ..settings import manager
 
 router = APIRouter(
     prefix="/create_embeddings_from_doc",
@@ -24,16 +25,15 @@ def create_vectors(uploaded_file: dict) -> float:
     price = reader.check_price()
     chunks = reader.chunks
 
-    #print(chunks[1])
-    #manager.generate_embeddings(chunks)
-    #manager.vdb_insert()
+    manager.generate_embeddings(chunks)
+    manager.vdb_insert()
     print(f"Price paid for {price[0]} tokens: USD {price[1]}")
     #del manager
     return price[1]
 
 #@app.post('/create_embeddings_from_doc', response_class=JSONResponse) #use this on app root file
 @router.post("/", response_class=JSONResponse)
-def upload(file: UploadFile = File(...)) -> JSONResponse:
+async def upload(file: UploadFile = File(...)) -> JSONResponse:
     filesuffix = '.'+file.headers['content-type'].split('/')[-1]
     temp = NamedTemporaryFile(
         dir= './tmp',

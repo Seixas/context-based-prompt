@@ -1,0 +1,81 @@
+A Apple lançou nesta segunda-feira (6/6/2023) o seu aguardado óculos de realidade aumentada, o Apple Vision Pro — o seu primeiro grande lançamento de hardware em quase uma década.
+
+Tim Cook, CEO da Apple, abriu o evento destacando a importância do device. “Hoje, vamos fazer um dos nossos maiores lançamentos da história”.  Na apresentação, Cook usou uma frase icônica de Steve Jobs: “um novo tipo de computador que combina perfeitamente o mundo real e o mundo digital”. O Apple Vision Pro é o óculos de realidade aumentada da Apple que permite ao usuário controlá-lo com os olhos, voz ou mãos.
+
+O que a Apple Vision Pro nós oferece ? 
+1) Seus aplicativos vivem em seu espaço : Com o Vision Pro, você tem uma tela infinita que transforma a forma como você usa os aplicativos que adora. Organize aplicativos em qualquer lugar e dimensione-os para o tamanho perfeito, tornando o espaço de trabalho dos seus sonhos uma realidade - tudo isso enquanto permanece presente no mundo ao seu redor. Navegue na web no Safari, crie uma lista de tarefas no Notes, converse no Mensagens e mova-se facilmente entre eles com um olhar.
+
+2) Uma maneira imersiva de experimentar o entretenimento : O Vision Pro pode transformar qualquer sala em seu próprio teatro pessoal. Expanda seus filmes, shows e jogos até o tamanho perfeito enquanto se sente parte da ação com o Spatial Audio. E com mais pixels do que uma TV 4K para cada olho, você pode desfrutar de um conteúdo incrível onde quer que esteja, seja em um voo longo ou no sofá de casa.
+
+3) Suas memórias ganham vida : Vision Pro é a primeira câmera 3D da Apple. Você pode capturar fotos espaciais mágicas e vídeos espaciais em 3D e, em seguida, reviver aqueles momentos queridos como nunca antes com o áudio espacial imersivo. Sua biblioteca existente de fotos e vídeos parece incrível em escala notável. E os panoramas envolvem você - fazendo você se sentir como se estivesse exatamente onde os tirou.
+
+4) Torne as reuniões mais significativas : O Vision Pro facilita a colaboração e a conexão onde quer que você esteja. Os blocos de vídeo do FaceTime são em tamanho real e, à medida que novas pessoas entram, a chamada simplesmente se expande em sua sala. No FaceTime, você também pode usar aplicativos para colaborar simultaneamente com colegas nos mesmos documentos.
+
+O Apple Vision Pro possui integração completa com o iPhone, Mac e iCloud, permitindo a visualização de aplicativos e interfaces como se estivessem no ambiente em que o usuário está. Os sensores que identificam movimentos das mãos e dos olhos, além do controle por voz via Siri, facilitam a interação com o conteúdo. Com um display 4K, utilizando a tecnologia microLED, que oferece 23 milhões de pixels, o Vision Pro é equipado com o chip M2, já conhecido nos Macs, e o novo R2.
+
+
+Review:
+Depois de uma demonstração de aproximadamente 30 minutos que percorreu os principais recursos que ainda estão prontos para teste, saí convencido de que a Apple deu nada menos que um salto genuíno na capacidade e execução do XR – ou realidade mista com seu novo Apple Vision Pro.
+
+Para ser super claro, não estou dizendo que cumpre todas as promessas, é um paradigma genuinamente novo em computação ou qualquer outra reivindicação de alta potência que a Apple espera cumprir assim que for lançada. Vou precisar de muito mais tempo com o dispositivo do que uma demonstração guiada.
+
+Mas, eu usei essencialmente todos os principais fones de ouvido VR e dispositivos AR desde o Oculus DK1 de 2013 até as últimas gerações de fones de ouvido Quest e Vive. Eu tentei todas as experiências e golpes para fazer a busca acontecer quando se trata de XR. Fiquei impressionado e maravilhado com os desenvolvedores de hardware e software desses dispositivos e seus aplicativos famosos que continuaram a mastigar o “enigma do aplicativo matador” – tentando encontrar algo que fosse realmente aceito pelo público mais amplo público.
+
+Existem alguns sucessos sociais, narrativos ou de jogos genuínos, como Gorilla Tag, VRChat ou Cosmonius. Também me emocionei com as experiências em primeira pessoa dos cineastas de Sundance, destacando a condição humana (ou animal).
+
+Mas nenhum deles tinha as vantagens que a Apple traz para a mesa com o Apple Vision Pro. Ou seja, 5.000 patentes registradas nos últimos anos e uma enorme base de talentos e capital para trabalhar. Cada pedacinho disso mostra a ambição no nível da Apple. não sei se vai ser o ‘próximo modo de computação’, mas você pode ver o convicção por trás de cada uma das escolhas feitas aqui. Sem cantos cortados. Engenharia de inclinação total em exibição.
+
+O hardware é bom, muito bom, com 24 milhões de pixels nos dois painéis, muito mais do que qualquer fone de ouvido com o qual a maioria dos consumidores já teve contato. A ótica é melhor, a faixa de cabeça é confortável e rapidamente ajustável e há uma alça superior para alívio de peso. A Apple diz que ainda está trabalhando em quais opções de selo de luz (a mortalha de pano) serão enviadas com ele quando for lançado oficialmente, mas o padrão foi confortável para mim. Eles pretendem enviá-los com tamanhos e formas variados para caber em diferentes rostos. O conector de alimentação também possui um excelente design que se interconecta usando ligações de alimentação internas do tipo pino com uma trava de torção externa.
+
+Apple WWDC23 Vision Pro glass twitter
+Há também uma solução magnética para alguns (mas não todos) ajustes ópticos que pessoas com diferenças de visão podem precisar. A experiência de integração apresenta uma calibração automática de alívio de olho que combina as lentes com o centro de seus olhos. Não há rodas manuais ajustando isso aqui.
+
+A moldura principal e a peça de vidro parecem boas, embora valha a pena mencionar que são muito substanciais em tamanho. Não pesado, per-se, mas definitivamente presente.
+
+Se você tem alguma experiência com RV, sabe que as duas grandes barreiras que a maioria das pessoas atinge são a náusea provocada pela latência ou o isolamento que as longas sessões de usar algo sobre os olhos podem proporcionar.
+
+A Apple mitigou ambos de frente. O chip R1 que fica ao lado do chip M1 tem uma taxa de polling em todo o sistema de 12ms e não notei trepidação ou quedas de quadros. Houve um leve efeito de desfoque de movimento usado no modo de passagem, mas não foi uma distração. As próprias janelas renderizaram com nitidez e se moveram rapidamente.
+
+Claro, a Apple foi capaz de mitigar esses problemas devido a muitos hardwares completamente novos e originais. Onde quer que você olhe, há uma nova ideia, uma nova tecnologia ou uma nova implementação. Tudo isso novo tem um preço, $ 3.500 está no topo das expectativas e coloca firmemente o dispositivo na categoria de usuário avançado para os primeiros usuários.
+
+Apple WWDC23 Vision Pro VisionOS twitter
+Aqui está o que a Apple acertou que outros fones de ouvido simplesmente não conseguiram:
+
+O rastreamento ocular e o controle de gestos são quase perfeitos. Os gestos das mãos são captados em qualquer lugar ao redor do fone de ouvido, incluindo no colo ou embaixo e longe, descansando em uma cadeira ou sofá. Muitas outras interfaces de rastreamento de mão forçam você a manter as mãos à sua frente, o que é cansativo. Apple tem câmeras de alta resolução dedicadas à parte inferior do aparelho apenas para manter o controle de suas mãos. Da mesma forma, uma matriz de rastreamento ocular no interior significa que, após a calibração, quase tudo o que você olha é destacado com precisão. Um simples toque de baixo esforço de seus dedos e boom, funciona.
+
+Passthrough é uma chave importante. Ter uma visão 4k em tempo real do mundo ao seu redor que inclui qualquer ser humano em seu espaço pessoal é tão importante para o uso de VR ou AR de longa sessão. Há uma coisa profunda no cérebro animal na maioria dos humanos que nos deixa muito, muito desconfortáveis ​​se não pudermos ver o que está ao nosso redor por um período de tempo. Eliminar essa preocupação passando por uma imagem deve aumentar a chance de longos tempos de uso. Há também um mecanismo inteligente de ‘descoberta’ que automaticamente passa por uma pessoa que se aproxima de você através seu conteúdo, alertando-o para o fato de que eles estão se aproximando. Os olhos do lado de fora, que mudam de aparência dependendo do que você está fazendo, também fornecem uma boa sugestão de contexto para quem está do lado de fora.
+
+A resolução significa que o texto é realmente legível. O posicionamento da Apple como um dispositivo de computação completo só faz sentido se você realmente puder ler o texto nele. Todas as iterações anteriores de configurações de ‘área de trabalho virtual’ dependiam de painéis e lentes que apresentavam uma visão muito embaçada para ler de forma confiável o texto detalhado. Em muitos casos, literalmente doeu fazer isso. Não com o Apple Vision Pro – o texto é super nítido e legível em todos os tamanhos e em ‘distâncias’ distantes dentro do seu espaço.
+
+Apple WWDC23 Vision Pro lifestyle with battery FaceTime twitter
+Houve um punhado de momentos realmente surpreendentes do meu curto período de tempo com o fone de ouvido também. Além da nitidez da tela e da capacidade de resposta ágil da interface, todo o conjunto de amostras esbanjava atenção aos detalhes.
+
+O Jogo das Personas. Eu duvidava MUITO que a Apple pudesse criar um avatar digital viável com base apenas em uma varredura do seu rosto usando o próprio headset Vision Pro. Dúvida esmagada. Eu diria que se você está medindo a versão digital de você que ele cria para ser seu avatar em chamadas facetime e outras áreas, tem um conjunto sólido de dedos no outro lado do vale misterioso. Não é totalmente perfeito, mas eles acertaram a tensão da pele e o trabalho muscular, as expressões que você faz são usadas para interpolar uma gama completa de contorções faciais usando modelos de aprendizado de máquina e as breves interações que tive com uma pessoa viva em uma chamada ( e foi ao vivo, verifiquei perguntando coisas ‘fora do roteiro’) não parecia assustador ou estranho, funcionou.
+
+É nítido. Estou meio que afirmando isso de novo, mas, realmente, é nítido como o inferno. Correndo até demos como o dinossauro 3D, você vai direto ao nível da textura e além.
+
+Os filmes em 3D são realmente bons nele. Jim Cameron provavelmente teve um momento em que viu Avatar: Way of Water no Apple Vision Pro. Essa coisa nasceu absolutamente para fazer o formato 3D cantar – e pode exibi-los imediatamente, então haverá uma biblioteca decente de filmagens em 3D que trará uma nova vida a todos eles. As fotos e vídeos 3D que você pode tirar com o Apple Vision Pro diretamente também parecem ótimos, mas não consegui testar a captura de nenhum deles, então não sei como isso vai se sentir, estranho? Difícil de dizer.
+
+A configuração é suave e simples. Um par de minutos e você está pronto para ir, muito Apple.
+
+Sim, parece tão bom. A saída da interface e os vários aplicativos são tão bons que a Apple acabou de usá-los diretamente do dispositivo em sua palestra. A interface é brilhante e ousada e parece presente pela forma como interage com outras janelas, lança sombras no chão e reage às condições de iluminação.
+
+No geral, estou hesitante em fazer qualquer afirmação ampla sobre se o Apple Vision Pro vai cumprir as reivindicações da Apple sobre o início da computação espacial. Tive muito pouco tempo com ele e ainda nem está concluído – a Apple ainda está trabalhando em coisas como a cobertura de luz e, definitivamente, em muitos aspectos do software.
+
+É, no entanto, muito, muito bem feito. O ideal platônico de um fone de ouvido XR. Agora, esperamos para ver o que os desenvolvedores e a Apple realizam nos próximos meses e como o público reage.
+
+Lançamento:
+O vídeo de apresentação do Apple Vision Pro realizado pela Apple na última semana bateu a marca impressionante de 50 milhões de visualizações em menos de 10 dias de publicação. A grande quantidade de visualização no aparelho de realidade mista da empresa de Cupertino mostra o potencial que o produto tem entre os consumidores.
+
+Além da grande quantidade de visualização, o vídeo também conseguiu reunir uma grande quantidade de curtidas, somando 396 mil desde quando foi lançado no YouTube. Entretanto, os comentários do vídeo estão desativados e não dá para saber exatamente a impressão que ele teve entre o público.
+
+Por mais que o vídeo tenha atraído uma grande quantidade de visualização, nem todas elas vieram de maneira orgânica. Pelo menos é isso que aponta o usuário do Twitter conhecido como concept_central. Ele revelou que o vídeo do Apple Vision Pro fez parte de uma campanha publicitária da Apple, elevando consideravelmente o número de views.
+
+Outro usuário do Twitter conhecido como David Lynch também ressaltou que o vídeo da revelação da Apple apareceu como recomendado em diversas ocasiões diferentes. Isso reiteraria o fato da Apple estar realizando uma ação publicitária com o produto.
+
+Vendas devem engrenar após o primeiro ano de lançamento
+Independentemente da fonte de visualização das 50 milhões de views no vídeo, todos os que assistiram à apresentação da Apple e ficaram ansiosos para ter o produto precisarão esperar mais um pouco. Isso porque ele não deve chegar antes de 2024, sendo necessário mais algum tempo antes de ser disponibilizado em varejistas de todo o mundo.
+
+Atualmente, a Sony, que é a fornecedora interna de painéis microLED da Apple para o Vision Pro, só pode fornecer 900.000 unidades, ou 450.000 pares de displays anualmente para seu cliente. Dessas unidades, as estimativas de vendas anteriores da empresa eram de apenas 150.000 unidades para o próximo ano.
+
+Caso os consumidores resolvam adquirir em peso o Apple Vision Pro, é possível que a empresa de Cupertino acabe não conseguindo dar conta de uma fabricação em massa. O número seria ainda menor no primeiro ano justamente em função da capacidade da Sony de fornecer painéis microLED para a Apple.

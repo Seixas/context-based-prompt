@@ -11,4 +11,5 @@ class Prompts(Base):
     prompt = Column(String)
     ntokens = Column(Integer)
     cost = Column(Float)
+    emb_distance = Column(Float, nullable=True)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)

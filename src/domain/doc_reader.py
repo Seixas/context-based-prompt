@@ -52,7 +52,11 @@ class DocReader:
         raise NotImplementedError("WORD parser needs to be implemented")
 
     def __parse_txt(self) -> str:
-        raise NotImplementedError("TXT parser needs to be implemented")
+        fulltext = ""
+        with open(self.doc, "r", encoding="utf8") as txt:
+            fulltext = txt.read()
+        txt.close()
+        return fulltext
 
     def gen_chunks(self, text: str, chunk_size: int=500) -> list[str]:
         """Generate text chunks from a full document text
